@@ -1,7 +1,56 @@
+body{
+    font-family: inter;
+}
+.navbar-white{
+    background-color: #FFFFFF;
+}
 .logo{
     width:40px;
     height:39px;
 }
 .space{
     gap:5em;
+}
+.hero{
+    background: linear-gradient(to right, rgba(10, 9, 9, 0.8), rgba(36, 33, 33, 0.46)), url('../assets/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 5em;
+    padding:3em;
+}
+.hero .text{
+    margin-top:7em;
+    display: grid;
+    place-content: center;
+}
+.hero .text h1{
+    max-width: 600px;
+    background: linear-gradient(to right, rgba(255, 242, 3,1), rgba(218, 207, 6));
+    background-clip: text;
+    -webkit-background-clip: text; /* For older WebKit browsers */
+    color: transparent;
+    -webkit-text-fill-color: transparent; /* For older WebKit browsers */
+}
+
+.hero .text p{
+    color: #FFFFFF;
+    max-width: 600px;
+    margin-top: 55px;
+}
+.pry-cta{
+    margin-top: 55px;
+    margin-bottom: 2em;
+}
+
+.pry-cta button{
+    border: none;
+    width:120px;
+    border-radius: 40px;
+    padding:.5em;
+}
+
+.pry-cta button:hover{
+    background-color: #013662;
+    color: #FFFFFF;
+    transition:3000ms ease-in-out;
 }
