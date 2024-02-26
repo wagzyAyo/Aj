@@ -1,5 +1,6 @@
 body{
     font-family: inter;
+    overflow-x: hidden;
 }
 .navbar-white{
     background-color: #FFFFFF;
@@ -53,4 +54,28 @@ body{
     background-color: #013662;
     color: #FFFFFF;
     transition:3000ms ease-in-out;
+}
+.line{
+    max-width: 83px;
+    height: 1px;
+    border: 1px solid #013662;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and(max-width: 780px){
+    .grid{
+        grid-template-rows: 1fr;
+    }
+}
+.content-size{
+    max-width: 460px;
+    gap:20px;
+}
+.fa-solid{
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    color: #013662;
 }
