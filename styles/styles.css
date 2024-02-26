@@ -66,18 +66,13 @@ body{
     padding: 0 25%;
 }
 
-@media screen and (max-width: 1000px){
-    .grid{
-        display: grid;
-        grid-template-columns: 1fr;
-       margin: 0 auto;
-    }
-}
+
 .content-size{
     max-width: 460px;
     gap:20px;
 }
-.fa-solid{
+
+.service .fa-solid{
     background-color: #FFFFFF;
     border-radius: 50%;
     color: #013662;
@@ -108,4 +103,50 @@ img{
     padding: 56px 20px;
     position: relative;
     top: 2em;
+}
+
+.text-input{
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+}
+
+.form-space{
+    gap:2em;
+}
+
+.center-form{
+    margin: 0 auto;
+    padding: 25%;
+    display: grid;
+    place-content: center;
+}
+
+.send-btn{
+    padding: 10px 70px;
+    display: grid;
+    place-content: center;
+    color: #FFFFFF;
+    background-color: #013662;
+    border: none;
+    border-radius: 6px;
+}
+
+footer{
+    background-color: #013662;
+    width:100%;
+    height: auto;
+    color: #FFFFFF;
+    padding: 30px;
+}
+footer .location{
+    gap: 20px;
+}
+
+@media screen and (max-width: 1000px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+       margin: 0 auto;
+    }
 }
