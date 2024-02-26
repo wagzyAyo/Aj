@@ -72,6 +72,7 @@ body{
     gap:20px;
 }
 
+
 .service .fa-solid{
     background-color: #FFFFFF;
     border-radius: 50%;
@@ -149,4 +150,18 @@ footer .location{
         grid-template-columns: 1fr;
        margin: 0 auto;
     }
+}
+
+
+/** Animation ***/
+.content-1, .content-2, 
+.content-3, .content-4,
+.content-5, .content-6{
+    opacity: 0;
+}
+
+.content-1.animate__animated, .content-2.animate__animated
+,.content-3.animate__animated,.content-4.animate__animated,
+.content5.animate__animated, .content6.animate__animated{
+    opacity: 1;
 }
