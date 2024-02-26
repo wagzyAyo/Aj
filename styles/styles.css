@@ -63,11 +63,13 @@ body{
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 0 25%;
 }
 
-@media screen and(max-width: 780px){
+@media screen and (max-width: 1000px){
     .grid{
-        grid-template-rows: 1fr;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
 .content-size{
