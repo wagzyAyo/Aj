@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $headers .= "Reply-To: $email \r\n"; 
 
     if (mail($to, $subject, $body, $headers)) { 
-        header("Location: index.html");
+        header("Location: success.html");
         exit; 
     } else {
         echo "Error: Unable to send message";
