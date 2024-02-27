@@ -138,19 +138,19 @@
       <form action="mail.php" method="post">
         <div class="d-flex flex-column form-space">
         <label for="name"><b>Name</b></label>
-        <input type="text" placeholder="Enter your name" name="name" class="text-input">
+        <input type="text" placeholder="Enter your name" name="name" class="text-input" required>
       </div>
         <div class="d-flex flex-column form-space mt-3">
         <label for="email"><b>Email</b></label>
-        <input type="email" placeholder="Enter your email" name="email" class="text-input">
+        <input type="email" placeholder="Enter your email" name="email" class="text-input" required>
       </div>
         <div class="d-flex flex-column form-space mt-3">
         <label for="subject"><b>Message subject</b></label>
-        <input type="text" placeholder="subject of your message" name="subject" class="text-input">
+        <input type="text" placeholder="subject of your message" name="subject" class="text-input" required>
       </div>
         <div class="d-flex flex-column form-space mt-3">
         <label for="message"><b>Message</b></label>
-        <textarea name="message" id="" cols="30" rows="10" placeholder="type your message..." class="p-3"></textarea>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="type your message..." required class="p-3"></textarea>
       </div>
       <input type="submit" value="send" class="send-btn mt-3 mx-auto">
       </form>
