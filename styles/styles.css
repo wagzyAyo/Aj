@@ -80,6 +80,55 @@ body{
     color: #013662;
 }
 
+.circle-group, .circle-group-2
+, .circle-group-3, .circle-group-4
+.circle-group-5 {
+    position: relative;
+    left: 85%;
+    bottom: 15em
+}
+
+.circle-group-2{
+    bottom: 14em;
+}
+
+.circle-group-3{
+    bottom: 12em;
+}
+
+.circle-group-4{
+    bottom: 10em;
+}
+
+.circle-group-5{
+    bottom: 8em;
+}
+
+.c-1 {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    border: none;
+    position: absolute;
+}
+
+.one {
+    left: 0;
+}
+
+.two {
+    left: 20px;
+}
+
+.three {
+    left: 40px;
+}
+
+.four {
+    left: 60px;
+}
+
 .about{
     margin-top: 5em;
     gap: 3em;
@@ -150,6 +199,10 @@ footer .location{
         display: grid;
         grid-template-columns: 1fr;
        margin: 0 auto;
+    }
+
+    .circle-group{
+        display: none;
     }
 }
 
