@@ -201,7 +201,12 @@ footer .location{
        margin: 0 auto;
     }
 
-    .circle-group{
+    .circle-group, 
+    .circle-group-4, 
+    .circle-group-5, 
+    .circle-group-3,
+    .circle-group-2
+    {
         display: none;
     }
 }
