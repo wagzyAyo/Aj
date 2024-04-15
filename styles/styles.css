@@ -4,16 +4,23 @@
 
     --primary-color: #013662;
     --white-color: #FFFFFF;
+    --bg-color: #D9D9D9;
 
 
     --grid-display: grid;
     --flex-display: flex;
+    --no-display: none;
+
     --background-size: cover;
     --background-repeat: no-repeat;
     --over-flow: hidden;
     --center-item: center;
     --transparent: transparent;
     --clip-text: text;
+
+    --no-border: var(--no-display);
+
+    --relative-position: relative;
 }
 body{
     font-family: var(--font-family);
@@ -65,12 +72,12 @@ body{
     width:120px;
     border-radius: 40px;
     padding:.5em;
+    transition:3000ms ease-in-out;
 }
 
 .pry-cta button:hover{
     background-color: var(--primary-color);
     color: var(--white-color);
-    transition:3000ms ease-in-out;
 }
 .line{
     max-width: 83px;
@@ -97,53 +104,21 @@ body{
     color: var(--primary-color);
 }
 
-.circle-group, .circle-group-2
-, .circle-group-3, .circle-group-4
-.circle-group-5 {
-    position: relative;
+
+.circle-group{
+    display: var(--grid-display);
+    position: var(--relative-position);
     left: 85%;
-    bottom: 15em
+    bottom:15em;
 }
 
-.circle-group-2{
-    bottom: 14em;
-}
-
-.circle-group-3{
-    bottom: 12em;
-}
-
-.circle-group-4{
-    bottom: 10em;
-}
-
-.circle-group-5{
-    bottom: 8em;
-}
-
-.c-1 {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #D9D9D9;
-    border: none;
-    position: absolute;
-}
-
-.one {
-    left: 0;
-}
-
-.two {
-    left: 20px;
-}
-
-.three {
-    left: 40px;
-}
-
-.four {
-    left: 60px;
+.circle-group .circle{
+    border-style: var(--no-border);
+    border-color: var(--bg-color);
+    border-top-style: dotted;
+    border-width:10px;
+    width: 5%;
+    margin-top: 1em;
 }
 
 .about{
@@ -196,7 +171,7 @@ img{
     place-content: var(--center-item);
     color: var(--white-color);
     background-color: var(--primary-color);
-    border: none;
+    border: var(--no-border);
     border-radius: 6px;
 }
 
@@ -224,7 +199,7 @@ footer .location{
     .circle-group-3,
     .circle-group-2
     {
-        display: none;
+        display: var(--no-display);
     }
 }
 
