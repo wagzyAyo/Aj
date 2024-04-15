@@ -1,9 +1,26 @@
+:root{
+    --font-family: inter;
+
+
+    --primary-color: #013662;
+    --white-color: #FFFFFF;
+
+
+    --grid-display: grid;
+    --flex-display: flex;
+    --background-size: cover;
+    --background-repeat: no-repeat;
+    --over-flow: hidden;
+    --center-item: center;
+    --transparent: transparent;
+    --clip-text: text;
+}
 body{
-    font-family: inter;
-    overflow-x: hidden;
+    font-family: var(--font-family);
+    overflow-x: var(--over-flow);
 }
 .navbar-white{
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
 }
 .logo{
     width:40px;
@@ -14,27 +31,27 @@ body{
 }
 .hero{
     background: linear-gradient(to right, rgba(10, 9, 9, 0.8), rgba(36, 33, 33, 0.46)), url('../assets/hero.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: var(--background-size);
+    background-repeat: var(--background-repeat);
     margin-top: 5em;
     padding:3em;
 }
 .hero .text{
     margin-top:7em;
-    display: grid;
-    place-content: center;
+    display: var(--grid-display);
+    place-content: var(--center-item);
 }
 .hero .text h1{
     max-width: 600px;
     background: linear-gradient(to right, rgba(255, 242, 3,1), rgba(218, 207, 6));
-    background-clip: text;
-    -webkit-background-clip: text; /* For older WebKit browsers */
-    color: transparent;
-    -webkit-text-fill-color: transparent; /* For older WebKit browsers */
+    background-clip: var(--clip-text);
+    -webkit-background-clip: var(--clip-text); /* For older WebKit browsers */
+    color: var(--transparent);
+    -webkit-text-fill-color: var(--transparent); /* For older WebKit browsers */
 }
 
 .hero .text p{
-    color: #FFFFFF;
+    color: var(--white-color);
     max-width: 600px;
     margin-top: 55px;
 }
@@ -51,18 +68,18 @@ body{
 }
 
 .pry-cta button:hover{
-    background-color: #013662;
-    color: #FFFFFF;
+    background-color: var(--primary-color);
+    color: var(--white-color);
     transition:3000ms ease-in-out;
 }
 .line{
     max-width: 83px;
     height: 1px;
-    background-color: #013662;
-    border: 1px solid #013662;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
 .grid{
-    display: grid;
+    display: var(--grid-display);
     grid-template-columns: 1fr 1fr;
     padding: 0 25%;
 }
@@ -77,7 +94,7 @@ body{
 .service .fa-solid{
     background-color: #FFFFFF;
     border-radius: 50%;
-    color: #013662;
+    color: var(--primary-color);
 }
 
 .circle-group, .circle-group-2
@@ -146,7 +163,7 @@ img{
 }
 
 .about-container{
-    color: #FFFFFF;
+    color: var(--white-color);
     background-color: #302E2E;
     border-radius: 20px 30px 20px 30px;
     max-width: 518px;
@@ -169,16 +186,16 @@ img{
 .center-form{
     margin: 0 auto;
     padding: 25%;
-    display: grid;
-    place-content: center;
+    display: var(--grid-display);
+    place-content: var(--center-item);
 }
 
 .send-btn{
     padding: 10px 70px;
-    display: grid;
-    place-content: center;
-    color: #FFFFFF;
-    background-color: #013662;
+    display: var(--grid-display);
+    place-content: var(--center-item);
+    color: var(--white-color);
+    background-color: var(--primary-color);
     border: none;
     border-radius: 6px;
 }
@@ -196,7 +213,7 @@ footer .location{
 
 @media screen and (max-width: 1000px){
     .grid{
-        display: grid;
+        display: var(--grid-display);
         grid-template-columns: 1fr;
        margin: 0 auto;
     }
