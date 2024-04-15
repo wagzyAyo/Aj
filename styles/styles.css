@@ -98,10 +98,9 @@ body{
 }
 
 
-.service .fa-solid{
-    background-color: #FFFFFF;
+.service .fa-solid.fa-location-dot{
+    color: var(--white-color);
     border-radius: 50%;
-    color: var(--primary-color);
 }
 
 
@@ -176,10 +175,10 @@ img{
 }
 
 footer{
-    background-color: #013662;
+    background-color: var(--primary-color);
     width:100%;
     height: auto;
-    color: #FFFFFF;
+    color: var(--white-color);
     padding: 30px;
 }
 footer .location{
